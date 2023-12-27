@@ -2,12 +2,16 @@
 
 <html>
 	<head>
-		<title>Estudio Juridico Ferro</title>
+		<title>Estudio Juridico Penal Ferro</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		//----carousel
+		<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+		<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+		//----carousel
 	</head>
 	<body class="is-preload">
 
@@ -31,8 +35,24 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Estudio Jurídico Ferro</h1>
-							<p>Abogada particular egresada de la Universidad Nacional de Cuyo. Ejerce defensa particular y representación de querellante en causas penales por delitos provinciales y federales.</p>
+							<h1>Estudio Jurídico Penal Ferro y Asoc.</h1>
+							<div class="swiffy-slider">
+								<ul class="slider-container">
+									<!-- <p>Somos un estudio jurídico especializado en Derecho Penal que se caracteriza por el absoluto compromiso en cada una de las causas en las que interviene.</p> -->
+									<li><img src="images/compromiso-flyer-4.png" style="max-width: 100%;height: auto;"></li>
+									<li><img src="images/confianza-flyer.png" style="max-width: 100%;height: auto;"></li>
+									<li><img src="images/atencionpersonalizada-flyer.png" style="max-width: 100%;height: auto;"></li>
+								</ul>
+							
+								<button type="button" class="slider-nav"></button>
+								<button type="button" class="slider-nav slider-nav-next"></button>
+							
+								<div class="slider-indicators">
+									<button class="active"></button>
+									<button></button>
+									<button></button>
+								</div>
+							</div>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Conoce más</a></li>
 							</ul>
@@ -41,6 +61,18 @@
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="abogadajosefinaferro.html" class="image"><img src="images/estafa.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Abogada Josefina Ferro</h2>
+									<p>Estudio fundado por la abogada Josefina Ferro, quien es egresada de la Facultad de Derecho de la UNCUYO. Responsable a cargo de la Comisión de Derecho Penal del Colegio de Abogados, 1era Circunscripción de Mendoza.  </p>
+									<ul class="actions">
+										<li><a href="abogadajosefinaferro.html" class="button">Ver más</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 						<section>
 							<a href="perfeccionamiento.html" class="image"><img src="images/perfeccionamiento.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
@@ -88,22 +120,27 @@
 								<section>
 									<span class="icon solid major fa-archive"></span>
 									<a href="area-defensa.html"><h3>Defensa particular en causas penales</h3></a>
-									<p>Toda persona sospechada por un presunto hecho delictivo tiene derecho (desde el primer momento en que esta persona advierte de estar siendo investigada) a designar una defensa de su confianza. </p>
+									<p>Toda persona sospechada por un presunto hecho delictivo tiene derecho -desde el primer momento en que se advierte estar siendo investigado- a designar una defensa de su confianza. </p>
 								</section>
-								<section>
+								<!-- <section>
 									<span class="icon solid major fa-lock"></span>
 									<a href="area-querella.html"><h3>Representación querellante particular en causas penales </h3></a>
 									<p>Persona querellante, es aquella considerada “ofendida” por un delito. Para resguardar sus intereses en el proceso penal que se inicia a raíz del hecho delictivo, cuenta con la posibilidad de designar como su representante a una persona abogada de su confianza.</p>
-								</section>
+								</section> -->
 								<section>
 									<span class="icon solid major fa-cog"></span>
 									<a href="area-litigacion.html"><h3>Litigación penal en sistema adversarial</h3></a>
-									<p>Conocer las herramientas de litigación en el proceso penal se torna esencial, toda vez que solo de esta manera se ejercerá una defensa activa que presente prueba conforme a su estrategia. </p>
+									<p>La reforma a los Códigos Procesales (para delitos provinciales y federales) derivó en la implementación progresiva del sistema adversarial en el que prima la oralidad como regla del proceso. </p>
 								</section>
 								<section>
 									<span class="icon solid major fa-desktop"></span>
 									<a href="area-cyberdelito.html"><h3>Cyberdelito</h3></a>
-									<p>El conocimiento acabado en cyberdelito se vuelve imprescindible para actuar en un proceso penal si tenemos en cuenta que las personas pueden ser acusadas de la comisión de delitos con herramientas tecnológicas (criptomonedas, web, malware).</p>
+									<p>Si tenemos en cuenta que las personas pueden ser acusadas de la comisión de delitos con herramientas tecnológicas (criptomonedas, web, malware) entendemos entendemos que el conocimiento acabado en cyberdelito se vuelve imprescindible para actuar en un proceso penal.</p>
+								</section>
+								<section>
+									<!-- <span class="icon solid major fa-lock"></span> -->
+									<a href="area-querella.html"><h3></h3></a>
+									<p></p>
 								</section>
 								<!-- <section>
 									<span class="icon solid major fa-link"></span>
@@ -145,7 +182,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Enviar consulta</a></li>
+											<li><a href="#" class="button submit">Enviar consulta</a></li>
 										</ul>
 									</form>
 								</section>
@@ -153,24 +190,28 @@
 									<ul class="contact">
 										<li>
 											<h3>Dirección</h3>
-											<span>San Martín 456<br />
+											<span>Av. Bartolomé Mitre 565<br />
+											Planta baja, oficina 16 <br/>
 											Ciudad de Mendoza<br />
 											Mendoza, Argentina</span>
 										</li>
 										<li>
-											<h3>Email</h3>
-											<a href="#">josefinaferro@gmail.com</a>
+											<div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.+Bartolom%C3%A9+Mitre+580%2C+ciudad+de+mendoza&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://textcaseconvert.com/"></a><br><a href="https://online-timer.me/"></a><br><style>.mapouter{position: relative;text-align: right;height: 300px;width: 300px;}</style><style>.gmap_canvas{overflow: hidden;background: none !important;height: 300px;width: 300px;}</style></div></div>
 										</li>
 										<li>
-											<h3>Celular</h3>
+											<h3>Email</h3>
+											<p>josefina-ferro@hotmail.com</p>
+										</li>
+										<li>
+											<h3>Celular / WhatsApp</h3>
 											<span>261 658-9732</span>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Redes</h3>
 											<ul class="icons">
 												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 											</ul>
-										</li>
+										</li> -->
 									</ul>
 								</section>
 							</div>
