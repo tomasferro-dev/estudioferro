@@ -1,0 +1,62 @@
+
+.carousel { 
+    position: relative; 
+    width: 100%; 
+    height: 160px; 
+    overflow: hidden; 
+    background-color: transparent; 
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+} 
+  
+.carousel-item .slide-image { 
+    width: 60%; 
+    @media screen  and (max-width: 736px){
+        width: 100%;
+    }
+    min-height: 160px; 
+    /* background-size: cover; 
+    background-repeat: no-repeat;  */
+    color: #fff;
+} 
+  
+.carousel-item { 
+    position: absolute; 
+    width: 100%; 
+    height: 270px; 
+    border: none; 
+    top: 0; 
+    left: 100%; 
+    display: flex;
+    justify-content: start;
+} 
+  
+.carousel-item.active {
+    left: 0;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+} 
+  
+.carousel-item div { 
+    height: 100%; 
+} 
+  
+.red { 
+    background-color: red; 
+} 
+  
+.green { 
+    background-color: green; 
+} 
+  
+.yellow { 
+    background-color: yellow; 
+} 
+  
+.violet { 
+    background-color: violet; 
+}

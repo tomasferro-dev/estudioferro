@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/carousel.css"> 
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 		<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -34,37 +35,70 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Estudio Jurídico Penal Ferro y Asoc.</h1>
-							<div class="swiffy-slider">
-								<ul class="slider-container">
-									<!-- <p>Somos un estudio jurídico especializado en Derecho Penal que se caracteriza por el absoluto compromiso en cada una de las causas en las que interviene.</p> -->
-									<li><img src="images/compromiso-flyer-4.png" style="max-width: 100%;height: auto;"></li>
-									<li><img src="images/confianza-flyer.png" style="max-width: 100%;height: auto;"></li>
-									<li><img src="images/atencionpersonalizada-flyer.png" style="max-width: 100%;height: auto;"></li>
-								</ul>
-							
-								<button type="button" class="slider-nav"></button>
-								<button type="button" class="slider-nav slider-nav-next"></button>
-							
-								<div class="slider-indicators">
-									<button class="active"></button>
-									<button></button>
-									<button></button>
-								</div>
-							</div>
+							<div class="carousel"> 
+								<div class="carousel-item"> 
+									<div class="slide-image"
+										<p style="margin-top: 20px  ;">Somos un estudio jurídico <strong>especializado en Derecho Penal</strong> que se caracteriza por el <strong>absoluto compromiso</strong> en cada una de las causas en las que interviene.</p>
+									</div> 
+								</div> 
+								<div class="carousel-item"> 
+									<div class="slide-image"
+										<p style="margin-top: 20px ;">Es de nuestro interés brindar <strong> información veraz y detallada</strong> a cada una de nuestras personas representadas, en relación a sus consultas y los procesos judiciales en los que actúan.</p>
+									</div> 
+								</div> 
+								<div class="carousel-item"> 
+									<div class="slide-image"
+										<p style="margin-top: 20px ;">Desde el momento en que intervenimos, delineamos estratégicamente la teoría del caso idónea para las circunstancias.  </p>
+									</div> 
+								</div> <div class="carousel-item"> 
+									<div class="slide-image"
+										<p style="margin-top: 20px ;"> Ello de conformidad con el interés de la persona representada, velando por el resguardo y protección de su libertad, su honra y sus bienes. </p>
+									</div> 
+								</div> 
+							</div> 
+							<script>
+								window.onload = function () { 
+
+    								let slides =  document.getElementsByClassName('carousel-item'); 
+  
+									function addActive(slide) { 
+										slide.classList.add('active'); 
+									} 
+								
+									function removeActive(slide) { 
+										slide.classList.remove('active'); 
+									} 
+								
+									addActive(slides[0]); 
+									setInterval(function () { 
+										for (let i = 0; i < slides.length; i++) { 
+											if (i + 1 == slides.length) { 
+												addActive(slides[0]); 
+												setTimeout(removeActive, 350, slides[i]); 
+												break; 
+											} 
+											if (slides[i].classList.contains('active')) { 
+												setTimeout(removeActive, 350, slides[i]); 
+												addActive(slides[i + 1]); 
+												break; 
+											} 
+										} 
+									}, 5500); 
+								};
+							</script>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Conoce más</a></li>
 							</ul>
 						</div>
 					</section>
-
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="abogadajosefinaferro.html" class="image"><img src="images/estafa.jpg" alt="" data-position="center center" /></a>
+							<!-- <a href="abogadajosefinaferro.html" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a> -->
 							<div class="content">
 								<div class="inner">
 									<h2>Abogada Josefina Ferro</h2>
-									<p>Estudio fundado por la abogada Josefina Ferro, quien es egresada de la Facultad de Derecho de la UNCUYO. Responsable a cargo de la Comisión de Derecho Penal del Colegio de Abogados, 1era Circunscripción de Mendoza.  </p>
+									<p>Estudio fundado por la abogada Josefina Ferro, egresada de la Facultad de Derecho de la UNCUYO. Responsable a cargo de la Comisión de Derecho Penal del Colegio de Abogados, 1era Circunscripción de Mendoza.  </p>
 									<ul class="actions">
 										<li><a href="abogadajosefinaferro.html" class="button">Ver más</a></li>
 									</ul>
@@ -84,7 +118,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="cyberdelito.html" class="image"><img src="images/cyberdelito.jpg" alt="" data-position="top center" /></a>
+							<a href="cyberdelito.html" class="image"><img src="images/Portada_Febrero.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Maestría en Cyberdelito</h2>
@@ -133,7 +167,7 @@
 								<section>
 									<span class="icon solid major fa-desktop"></span>
 									<a href="area-cyberdelito.html"><h3>Cyberdelito</h3></a>
-									<p>Si tenemos en cuenta que las personas pueden ser acusadas de la comisión de delitos con herramientas tecnológicas (criptomonedas, web, malware) entendemos entendemos que el conocimiento acabado en cyberdelito se vuelve imprescindible para actuar en un proceso penal.</p>
+									<p>Si tenemos en cuenta que las personas pueden ser acusadas de la comisión de delitos con herramientas tecnológicas (criptomonedas, web, malware) entendemos que el conocimiento acabado en cyberdelito se vuelve imprescindible para actuar en un proceso penal.</p>
 								</section>
 								<section>
 									<!-- <span class="icon solid major fa-lock"></span> -->
@@ -164,38 +198,20 @@
 							<p>Atención personalizada. Contáctese por WhatsApp o correo electrónico y reciba su respuesta de manera inmediata.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Nombre</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Consulta</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="#" class="button submit">Enviar consulta</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
 									<ul class="contact">
 										<li>
 											<h3>Dirección</h3>
 											<span>Av. Bartolomé Mitre 565<br />
 											Planta baja, oficina 16 <br/>
-											Ciudad de Mendoza<br />
-											Mendoza, Argentina</span>
+											Ciudad de Mendoza, Mendoza, Argentina</span>
 										</li>
 										<li>
-											<div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.+Bartolom%C3%A9+Mitre+580%2C+ciudad+de+mendoza&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://textcaseconvert.com/"></a><br><a href="https://online-timer.me/"></a><br><style>.mapouter{position: relative;text-align: right;height: 300px;width: 300px;}</style><style>.gmap_canvas{overflow: hidden;background: none !important;height: 300px;width: 300px;}</style></div></div>
+											<div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.+Bartolom%C3%A9+Mitre+580%2C+ciudad+de+mendoza&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://textcaseconvert.com/"></a><br><a href="https://online-timer.me/"></a><br><style>.mapouter{position: relative;text-align: right;height: 300px;width: 300px;}</style><style>.gmap_canvas{overflow: hidden;background: none !important;border-radius: 10%; height: 300px;width: 300px;}</style></div></div>
 										</li>
+									</ul>
+								</section>
+								<section>
+									<ul class="contact">
 										<li>
 											<h3>Email</h3>
 											<p>josefina-ferro@hotmail.com</p>
