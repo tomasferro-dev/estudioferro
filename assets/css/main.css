@@ -2986,7 +2986,20 @@ input, select, textarea {
 		}
 
 /* Spotlights */
-
+		.abogada {
+			background-image: url(../../images/g004.jpg);
+			border-radius: 5% 5% 0% 0%;
+			-webkit-border-radius: 5% 5% 0% 0%;
+			-moz-border-radius: 5% 5% 0% 0%;
+			-ms-border-radius: 5% 5% 0% 0%;
+			-o-border-radius: 5% 5% 0% 0%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-bottom: 15px;
+}
+		.abogada p {
+			color: #ffffff;
+		}
 	.spotlights > section {
 		display: -moz-flex;
 		display: -webkit-flex;
