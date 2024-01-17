@@ -116,7 +116,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		/* font-family: Arial, Helvetica, sans-serif; */
+		font-family: 'domine';
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -3259,6 +3260,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-color: #221b08;
+			/* background-image: url('https://live.staticflickr.com/2668/4148479855_44e7cc058f_b.jpg'); */
 		}
 
 		.wrapper.style1-alt {
