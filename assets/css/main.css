@@ -2988,7 +2988,7 @@ input, select, textarea {
 
 /* Spotlights */
 		.abogada {
-			background-image: url(../../images/g004.jpg);
+			/* background-image: url(../../images/adi-goldstein-EUsVwEOsblE-unsplash.jpg); */
 			border-radius: 5% 5% 0% 0%;
 			-webkit-border-radius: 5% 5% 0% 0%;
 			-moz-border-radius: 5% 5% 0% 0%;
@@ -3892,10 +3892,10 @@ input, select, textarea {
 		}
 
 /* Intro */
-
+		/*Bienvenida imagen principal*/
 	#intro {
 		background-attachment: fixed;
-		background-image: url("../../images/g002.jpg");
+		background-image: url("../../images/patrick-fore-H5Lf0nGyetk-unsplash\ \(1\).jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -3904,6 +3904,15 @@ input, select, textarea {
 		#intro p {
 			font-size: 1.25em;
 		}
+
+		#intro h1 {
+
+			color: #ffffff;
+			text-decoration: underline;
+			padding-right: 400px;
+			text-align: left;
+			-moz-text-decoration-line:;
+}
 
 			@media screen and (max-width: 980px) {
 
