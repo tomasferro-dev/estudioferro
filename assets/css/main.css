@@ -3911,7 +3911,7 @@ input, select, textarea {
 			text-decoration: underline;
 			padding-right: 400px;
 			text-align: left;
-			-moz-text-decoration-line:;
+			/* -moz-text-decoration-line:; */
 }
 
 			@media screen and (max-width: 980px) {
@@ -3926,6 +3926,10 @@ input, select, textarea {
 
 				#intro p {
 					font-size: 1em;
+				}
+				#intro h1 {
+					padding-right: 0;
+					padding-top: 150px;
 				}
 
 			}
