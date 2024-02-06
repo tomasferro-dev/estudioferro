@@ -3909,7 +3909,7 @@ input, select, textarea {
 
 			color: #ffffff;
 			text-decoration: underline;
-			padding-right: 400px;
+			padding-right: 200px;
 			text-align: left;
 			/* -moz-text-decoration-line:; */
 }
@@ -3922,6 +3922,20 @@ input, select, textarea {
 
 			}
 
+			.title{
+				display: flex;
+				a{
+					margin-top: 30px;
+					background-color: #0000008a;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				.title{
+					display: grid;
+				}
+			}
+
 			@media screen and (max-width: 736px) {
 
 				#intro p {
@@ -3929,10 +3943,12 @@ input, select, textarea {
 				}
 				#intro h1 {
 					padding-right: 0;
-					padding-top: 150px;
+					padding-top: 230px;
 				}
 
 			}
+
+		
 
 		@media screen and (max-width: 1280px) {
 
